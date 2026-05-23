@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <div class="film-icon">🎬</div>
+            <p class="now-showing">— NOW SHOWING —</p>
+            <h2>CINEMA<br><em>quiz</em></h2>
+            <p class="subtitle">Перевір свої знання про світ кіно</p>
+            <button id="start-btn">Купити квиток</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="header">
+                <span id="timer">⏳ 15</span>
+                <span id="score-display">★ 0</span>
+            </div>
+            <h2 id="question-text">Запитання 1</h2>
+            <div id="answers-container"></div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <div class="film-icon">🏆</div>
+            <p class="now-showing">— THE END —</p>
+            <h2>Фінал</h2>
+            <p class="result-text"></p>
+            <button id="restart-btn">Дивитися знову</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
